@@ -164,6 +164,13 @@
             </button>
 
             <!-- Topbar Search -->
+            <div id="tiemNow"></div>
+            <script>
+              setInterval(function () {
+                document.getElementById("tiemNow").innerText =
+                  new Date().toLocaleString();
+              }, 1000);
+            </script>
 
             <!-- Topbar Navbar -->
             <ul class="navbar-nav ml-auto">
@@ -460,7 +467,7 @@
 
             <!-- Content Row -->
             <div class="row">
-              <div class="col">
+              <div class="col-xl-6">
                 <div class="card shadow mb-4">
                   <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
@@ -515,7 +522,7 @@
                 </div>
               </div>
 
-              <div class="col">
+              <div class="col-xl-6">
                 <div class="card shadow mb-4">
                   <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
